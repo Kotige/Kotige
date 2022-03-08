@@ -71,7 +71,7 @@ I live in Brazil and I am a Physicist with an emphasis on Computational Physics 
 
 <br>
 
-### 🎧 Now Playing 
+<!-- ### 🎧 Now Playing 
 
 [![Spotify](https://github-readme-remake.vercel.app/api/spotify)](https://open.spotify.com/user/22h7rwwwdl24gbuzoep2yj3xa)
-<br/>
+<br/> -->
