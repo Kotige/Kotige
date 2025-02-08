@@ -8,7 +8,7 @@ I am Vítor Fernandes Barra, a web developer passionate about technology and inn
 <br>
 <br>
 <div align="center">
-<a href="https://kotige.github.io/">
+<a href="https://kotige.github.io/" target="_blank">
 <img alt="Portfolio link" src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" />
 </a>
 </div>
@@ -49,15 +49,13 @@ I am Vítor Fernandes Barra, a web developer passionate about technology and inn
 
 <p align="center">
 
-
- 
   <a href="https://github.com/Kotige">
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Kotige&show_icons=true&theme=vision-friendly-dark&include_all_commits=true&count_private=true"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kotige&layout=compact&langs_count=6&theme=vision-friendly-dark"/> 
-   </p>
+</p>
 
  ---
  
- <div align="center" > 
-  <i>Thanks for visiting</i>
+ <div align="center"> 
+    Thanks fo visiting!
   </div>
