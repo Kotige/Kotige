@@ -156,8 +156,8 @@ Pipeline RAG com LangChain + ChromaDB que ingere PDFs, gera embeddings e respond
 
 | Título | Instituição | Status |
 |---|---|---|
-| 🔬 **Licenciatura e Bacharelado em Física** | [UFSJ - Universidade Federal de São João del Rei] | ✅ Concluído |
-| 🔬 **Mestrado em Física** | [UFJF - Universidade Federal de Juiz de Fora] | ✅ Concluído |
+| 🔬 **Licenciatura e Bacharelado em Física** | UFSJ - Universidade Federal de São João del Rei | ✅ Concluído |
+| 🔬 **Mestrado em Física** | UFJF - Universidade Federal de Juiz de Fora | ✅ Concluído |
 
 ---
 
