@@ -148,8 +148,6 @@ Pipeline RAG com LangChain + ChromaDB que ingere PDFs, gera embeddings e respond
 
 [![GitHub stats](https://github-stats-extended.vercel.app/api?username=Kotige)](https://github.com/stats-organization/github-stats-extended)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kotige&layout=compact&theme=dark&hide_border=true&langs_count=8)
-
 </div>
 
 ---
