@@ -25,17 +25,17 @@ Hoje, além da base científica sólida, carrego experiência prática em **dese
 
 ---
 
-## ⚛️ Por Que Física é um Diferencial em Dados?
+## ⚛️ O diferencial de um Físico em Ciência de Dados
 
 | Habilidade de Físico | Aplicação Direta em Dados |
 |---|---|
-| 📐 **Modelagem matemática** | Constrói modelos preditivos com fundamento sólido, não "caixa preta" |
-| 📊 **Análise de incertezas** | Interpreta intervalos de confiança e p-valores com rigor real |
-| 🔬 **Método científico** | Formula hipóteses testáveis antes de qualquer análise (A/B Testing, inferência) |
-| 📉 **Ajuste de curvas e regressão** | Já aplicava regressões e mínimos quadrados muito antes de aprender Scikit-Learn |
-| 🧮 **Álgebra linear e cálculo** | Compreende o que acontece *dentro* dos algoritmos de ML, não só a superfície |
-| 🧩 **Simplificação de sistemas complexos** | Transforma problemas de negócio caóticos em modelos tratáveis |
-| 📖 **Didática e comunicação** | Explica resultados complexos para leigos — habilidade rara em times de dados |
+|  **Modelagem matemática** | Constrói modelos preditivos com fundamento sólido, não "caixa preta" |
+|  **Análise de incertezas** | Interpreta intervalos de confiança e p-valores com rigor real |
+|  **Método científico** | Formula hipóteses testáveis antes de qualquer análise (A/B Testing, inferência) |
+|  **Ajuste de curvas e regressão** | Já aplicava regressões e mínimos quadrados muito antes de aprender Scikit-Learn |
+|  **Álgebra linear e cálculo** | Compreende o que acontece *dentro* dos algoritmos de ML, não só a superfície |
+|  **Simplificação de sistemas complexos** | Transforma problemas de negócio caóticos em modelos tratáveis |
+|  **Didática e comunicação** | Explica resultados complexos para leigos — habilidade rara em times de dados |
 
 ---
 
