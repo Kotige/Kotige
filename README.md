@@ -118,4 +118,4 @@ _Background que me dá vantagem no deploy e na comunicação de produtos de dado
 
 _"Ainda tô no início. Mas se tem uma coisa que a Física me ensinou é que não faz sentido pular etapas só porque o resultado demora a aparecer."_
 
----
+###### ⭐ Se o pendulum-gravity-analyzer te ajudou ou você também tá migrando de área, deixa um alô.
