@@ -62,8 +62,6 @@ Além da familiaridade com a matemática, a estatística e a lógica computacion
 
 ## 📊 Projetos de Ciência de Dados
 
-> O primeiro. Os próximos vêm conforme eu avanço no plano de estudos".
-
 ### 🔬 [pendulum-gravity-analyzer](https://github.com/Kotige/pendulum-gravity-analyzer)
 
 Projeto final da fase de fundamentos de Python do meu plano de estudos. Um script de linha de comando que analisa dados experimentais reais coletados por alunos do ensino médio medindo a aceleração da gravidade local (g) com um pêndulo simples.
@@ -71,6 +69,14 @@ Projeto final da fase de fundamentos de Python do meu plano de estudos. Um scrip
 Python puro e a biblioteca nativa `csv` — de propósito, pra forçar o entendimento da lógica sem depender de biblioteca pronta.
 
 ##### `Python` `csv` `Física Experimental`
+
+### 🚢 [titanic-eda](https://github.com/Kotige/titanic-eda)
+
+Segundo projeto do meu plano de estudos, focado em estatística descritiva e inferencial aplicada a dados reais: distribuição de idade e tarifa, outliers, viés amostral e um intervalo de confiança de 95% para a idade média da população de passageiros do Titanic.
+
+Notebook em inglês e em português, com `pandas` e `matplotlab`, incluindo uma investigação sobre um viés que parecia óbvio nos dados (sobrevivência por classe) mas que, checando contra os próprios dados, se revelou uma leitura equivocada — não um artefato de registros perdidos.
+
+##### `Python` `pandas` `matplotlib` `Estatística Inferencial`
 
 ## 🌐 Projetos Web
 
