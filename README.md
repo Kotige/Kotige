@@ -2,98 +2,126 @@
 
 # Vítor Barra
 
-### Físico, estudando Cientista de Dados
+**Cientista de Dados** · Físico, mestre pela UFJF · Juiz de Fora, MG
 
-_Da física pros dados — ainda nas primeiras fases do caminho._
+_Faço a pergunta, monto o pipeline e desconfio do resultado antes de acreditar nele._
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorbarra/)
-[![Portfólio](https://img.shields.io/badge/Portfólio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://kernelblog.com.br/)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vifebarra@outlook.com)
+[![Gravidade Social](https://img.shields.io/badge/Projeto_em_destaque-Gravidade_Social-414A6C?style=for-the-badge&logo=jupyter&logoColor=white)](https://github.com/Kotige/gravidade-social-enem)
 
 </div>
 
 ---
 
-## De onde venho — e onde estou agora
+## Sobre mim
 
-Fiz graduação em **Física** (primeiro bacharelado, depois licenciatura) pela **UFSJ** com ênfase em Física Computacional e mestrado pela **UFJF**. Hoje dou aula de Física — e é fazendo isso toda semana, que reparo que o que mais gosto no ofício não é a matéria em si, mas o raciocínio por trás dela: formular e testar hipóteses, montar modelos, explorar limites e, é claro, desconfiar de resultados bonitos demais.
+Sou cientista de dados em início de carreira, com formação em Física e mestrado pela UFJF. Na pesquisa, passei anos usando programação pra resolver problemas que não tinham solução analítica — e aprendi que boa parte do trabalho é decidir quais simplificações fazem sentido e até onde um modelo merece confiança. Em dados é exatamente a mesma coisa.
 
-Faz um tempo que decidi levar esse raciocínio para outra área. Estou estudando Ciência de Dados por conta própria, do zero, seguindo um plano de estudos de fase por fase. A vantagem é que a formação em Física adiantou boa parte desse processo, especialmente no que diz respeito à matemática, estatística e à lógica computacional. Agora estou estudando Python, depois vou estudar Pandas/NumPy, visualização de dados, me aprofundar em estatística e machine learning.
+Hoje também dou aula de Física na rede estadual de Minas Gerais, e é de lá que vem boa parte das perguntas que me interessam: desempenho, desigualdade, o que um número mostra e o que ele esconde.
 
-Também carrego uma bagagem de **desenvolvimento web** (sites feitos sob demanda, projetos reais, não tutorial) que já me ajuda a pensar em deploy e em comunicar um projeto para terceiros — isso deve aparecer mais nos próximos projetos de dados também.
-
----
-
-## O que carrego da Física para essa transição
-
-Além da familiaridade com a matemática, a estatística e a lógica computacional, ser Físico me proporcionou outras habilidades que julgo relevantes aqui.
-
-| Da física                                | Pra ciência de dados                                                                                                                                         |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Ajuste de curvas e mínimos quadrados     | Já mexia com regressão desde a primeira vez que pisei em um laboratório de Física — agora é aprender a ferramenta certa (Scikit-learn), o conceito eu já sei |
-| Análise de incerteza e erro experimental | Desconfio de número sem intervalo de confiança. E já vi que isso faz todo sentido aqui também.                                                               |
-| Método científico                        | Hipótese antes de conclusão. Testar antes de acreditar e explorar os limites que um modelo pode ser considerado confiável.                                   |
-| Simplificar sistemas complexos           | Conduzir pesquisa em Física é basicamente decidir quais simplificações fazem ou não sentido. Descobri que em dados é a mesma coisa.                          |
-| Dar aulas                                | Ensinar e explicar uma ideia sem economizar clareza                                                                                                          |
+Gosto do ciclo inteiro: coletar e limpar os dados, modelar em SQL, analisar, testar hipóteses e transformar o resultado numa história ou numa ferramenta que outra pessoa consiga usar. Do desenvolvimento web eu trago o lado da entrega — interface, deploy e a preocupação de comunicar bem pra quem não vai abrir o notebook.
 
 ---
 
-## 🛠️ Stack Técnica
+## Projeto em destaque
 
-**Uso de verdade, no dia a dia:**
+### [Gravidade Social](https://github.com/Kotige/gravidade-social-enem) — o peso da origem na nota de Ciências da Natureza do ENEM em Minas Gerais
+
+Depois do ENEM 2026, ouvi de muitos alunos que a prova de Ciências da Natureza foi difícil. A pergunta que ficou foi outra: **quanto da nota de um estudante mineiro é explicado pela origem dele** — renda, escolaridade dos pais, rede de ensino e município — e em quais conteúdos essa diferença é maior?
+
+O projeto usa os microdados do INEP de 2020 a 2025, filtrados para Minas Gerais, e está em desenvolvimento.
+
+**O que já está construído:**
+
+- Pipeline reprodutível: ingestão em Python para Parquet e um banco DuckDB montado em camadas SQL (staging, analítica e agregada)
+- Harmonização de cerca de 80 variáveis ao longo de seis edições do exame
+- 12 testes de dados rodando a cada build, incluindo reconciliação com números conferidos à mão — e os próprios testes foram validados corrompendo os dados de propósito pra ver se eles falhavam
+- 8 decisões metodológicas documentadas, incluindo os problemas que os dados trouxeram: a partir de 2024 o INEP separou as tabelas sem chave em comum, a identificação das escolas mudou entre 2023 e 2024, escolas pequenas têm código mascarado e há cartões em branco com nota zero
+
+**Perguntas que o projeto responde:**
+
+| #     | Pergunta                                                                        |
+| ----- | ------------------------------------------------------------------------------- |
+| Q1    | Como a nota varia por rede de ensino, renda per capita e escolaridade dos pais? |
+| Q2    | Como os resultados se distribuem entre os municípios de Minas?                  |
+| Q3    | O que mais pesa na nota?                                                        |
+| Q4    | Quem deixa de fazer a prova?                                                    |
+| Q5–Q6 | Análise por item das questões de Ciências da Natureza e TRI                     |
+
+**Status:** dados e modelagem SQL concluídos · análise exploratória em andamento · modelagem estatística, TRI, app interativo e relatório final planejados.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logoColor=white)
+![Parquet](https://img.shields.io/badge/Parquet-50ABF1?style=flat-square&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
 
-**Do desenvolvimento web (isso sim já é rodado):**
+---
+
+## Outros projetos de dados
+
+**[titanic-eda](https://github.com/Kotige/titanic-eda)** — Estatística descritiva e inferencial com dados reais: distribuições, outliers, viés amostral e um intervalo de confiança de 95% para a idade média dos passageiros. A parte que mais gostei foi testar um viés que parecia óbvio (sobrevivência por classe) e descobrir, nos próprios dados, que a leitura estava errada.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+**[pendulum-gravity-analyzer](https://github.com/Kotige/pendulum-gravity-analyzer)** — Script de linha de comando que analisa dados experimentais reais, coletados por alunos do ensino médio, para medir a aceleração da gravidade local com um pêndulo simples. Escrevi em Python puro, só com a biblioteca nativa `csv`, de propósito: queria entender a lógica de leitura, limpeza e cálculo sem depender de biblioteca pronta.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![CSV](https://img.shields.io/badge/csv-555555?style=flat-square)
+
+---
+
+## Desenvolvimento web
+
+Sites feitos para clientes e para mim, do design ao deploy.
+
+| Projeto                                                | Descrição                                                         |
+| ------------------------------------------------------ | ----------------------------------------------------------------- |
+| [log-narrado](https://github.com/Kotige/log-narrado)   | Meu blog de experiências pessoais, física, dados e hobbies        |
+| [portfolio](https://github.com/Kotige/portfolio)       | Portfólio de Ciência de Dados em React + Tailwind (em construção) |
+| [ninacamurca](https://github.com/Kotige/ninacamurca)   | Portfólio profissional de fotografia e cobertura de eventos       |
+| [modv-estudio](https://github.com/Kotige/modv-estudio) | Site para empresa de Design Gráfico                               |
+
+---
+
+## Stack
+
+**Dados**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logoColor=white)
+
+**Web**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white)
-![Tailwindcss](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-**No radar, ainda não é stack de verdade (é pra onde o plano de estudos me levam nos próximos meses):**
+**Ferramentas**
 
-`SQL` `Pandas` `NumPy` `Matplotlib` `Seaborn` `Scikit-Learn`
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
----
-
-## 📊 Projetos de Ciência de Dados
-
-### 🔬 [pendulum-gravity-analyzer](https://github.com/Kotige/pendulum-gravity-analyzer)
-
-Projeto final da fase de fundamentos de Python do meu plano de estudos. Um script de linha de comando que analisa dados experimentais reais coletados por alunos do ensino médio medindo a aceleração da gravidade local (g) com um pêndulo simples.
-
-Python puro e a biblioteca nativa `csv` — de propósito, pra forçar o entendimento da lógica sem depender de biblioteca pronta.
-
-##### `Python` `csv` `Física Experimental`
-
-### 🚢 [titanic-eda](https://github.com/Kotige/titanic-eda)
-
-Segundo projeto do meu plano de estudos, focado em estatística descritiva e inferencial aplicada a dados reais: distribuição de idade e tarifa, outliers, viés amostral e um intervalo de confiança de 95% para a idade média da população de passageiros do Titanic.
-
-Notebook em inglês e em português, com `pandas` e `matplotlab`, incluindo uma investigação sobre um viés que parecia óbvio nos dados (sobrevivência por classe) mas que, checando contra os próprios dados, se revelou uma leitura equivocada — não um artefato de registros perdidos.
-
-##### `Python` `pandas` `matplotlib` `Estatística Inferencial`
-
-## 🌐 Projetos Web
-
-_Background que me dá vantagem no deploy e na comunicação de produtos de dados._
-
-| Projeto                                                                                | Descrição                         |
-| -------------------------------------------------------------------------------------- | --------------------------------- |
-| [kotige.github.io](https://github.com/Kotige/kotige.github.io)                         | Portfólio pessoal                 |
-| [fisio-laviniabarra](https://github.com/Kotige/fisio-laviniabarra)                     | Site para clínica de fisioterapia |
-| [salesPageCronicasFantasticas](https://github.com/Kotige/salesPageCronicasFantasticas) | Landing page de vendas            |
-| [kernel-blog](https://github.com/Kotige/kernel-blog)                                   | Blog técnico                      |
-| [aquereladoc](https://github.com/Kotige/aquereladoc)                                   | Site para artista                 |
-| [ninacamurca](https://github.com/Kotige/ninacamurca)                                   | Site para fotógrafa               |
+**Próximos passos:** `scikit-learn` `statsmodels` `TRI`
 
 ---
 
-## 📈 GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
@@ -103,25 +131,25 @@ _Background que me dá vantagem no deploy e na comunicação de produtos de dado
 
 ---
 
-## 🎓 Formação & Atividade Atual
+## Formação & Atividade Atual
 
-|                                             | Instituição                                          | Status                                     |
-| ------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
-| 🔬 **Licenciatura e Bacharelado em Física** | UFSJ — Universidade Federal de São João del Rei      | ✅ Concluído                               |
-| 🔬 **Mestrado em Física**                   | UFJF — Universidade Federal de Juiz de Fora          | ✅ Concluído                               |
-| 👨‍🏫 **Professor de Física**                  | IEE - Instituto Estadual de Educação de Juiz de Fora | 🔄 Atual, em paralelo aos estudos de dados |
+|                                                            | Instituição                                          | Status            |
+| ---------------------------------------------------------- | ---------------------------------------------------- | ----------------- |
+| **Bacharelado em Física** (ênfase em Física Computacional) | UFSJ — Universidade Federal de São João del-Rei      | Concluído (2016)  |
+| **Licenciatura em Física**                                 | UFSJ — Universidade Federal de São João del-Rei      | Concluído (2017)  |
+| **Mestrado em Física**                                     | UFJF — Universidade Federal de Juiz de Fora          | Concluído (2020)  |
+| **Professor de Física**                                    | IEE — Instituto Estadual de Educação de Juiz de Fora | Atual, desde 2023 |
 
 ---
 
-## 📬 Vamos Conversar?
+## Vamos conversar
 
-- 🎓 Trocar ideia com quem já fez, ou está fazendo, essa transição de carreira pra dados
-- 🤝 Feedback nos meus projetos — o pendulum-gravity-analyzer é um bom ponto de partida
-- 💼 De olho em estágio ou numa primeira oportunidade júnior em dados, conforme o portfólio for crescendo
+Estou aberto a oportunidades como **cientista ou analista de dados júnior** e a trocar ideia com quem trabalha com dados educacionais, estatística aplicada ou dados públicos. Feedback no Gravidade Social também é muito bem-vindo.
+
 <div align="center">
 
-[![Fale Comigo no LinkedIn](https://img.shields.io/badge/Fale_Comigo_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorbarra/)
+[![Fale comigo no LinkedIn](https://img.shields.io/badge/Fale_comigo_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorbarra/)
 
-_"Ainda tô no início. Mas se tem uma coisa que a Física me ensinou é que não faz sentido pular etapas só porque o resultado demora a aparecer."_
+_Se tem uma coisa que a Física me ensinou é desconfiar de resultado bonito demais._
 
-###### ⭐ Se o pendulum-gravity-analyzer te ajudou ou você também tá migrando de área, deixa um alô.
+</div>
